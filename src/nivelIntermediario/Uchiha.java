@@ -50,4 +50,10 @@ public class Uchiha extends Ninja implements ShariganInterface {
             System.out.println("SEU QI É: " + qi + " e voce  precisa treinar mais suas estrategias");
         }
     }
+
+    public void metodoProvissorio() {
+        System.out.println("test na classe uchiha");
+    }
+
+
 }

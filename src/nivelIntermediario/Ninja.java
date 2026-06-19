@@ -64,5 +64,14 @@ public abstract class Ninja implements EstrategiaDeBatalha  {
         }
     }
 
+    //metodo sem override
+    public void metodoProvissorio() {
+        System.out.println("test na classe ninja");
+    }
+
+    @Override
+    public String toString() {
+        return "Meu nome é: " + nome + " Eu sou da: " + aldeia + " e tenho " + idade + " Anos";
+    }
 
 }
