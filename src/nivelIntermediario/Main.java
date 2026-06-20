@@ -1,21 +1,16 @@
 package nivelIntermediario;
 
 public class Main {
-
-
     static void main(String[] args) {
 
-        System.out.println("------------- Naurto Uzumaki --------------");
-        Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16);
-        System.out.println(naruto);
-        naruto.metodoProvissorio();
+        System.out.println("-------- Naruto Uzumaki ----------");
+        Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 17, 30, 1.67);
+        System.out.println("Meu nome é " + naruto.getNome());
+        naruto.setNome("Naruto Uzumaki com nome alterado");
 
-        System.out.println("------------- Sasuke Uchiha --------------");
-        Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da folha", 18);
-        System.out.println(sasuke);
 
-        Anbu anbu = new Anbu();
-        anbu.nome = "aa";
+        System.out.println("---------- Sasuke Uchiha ----------");
+
 
     }
 }

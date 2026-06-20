@@ -1,82 +1,64 @@
 package nivelIntermediario;
 
-public abstract class Ninja implements EstrategiaDeBatalha  {
+public class Ninja {
 
+    private String nome;
+    private String aldeia;
+    private int idade;
+    private int numeroDeMissoesConcluidas;
+    private  double altura;
 
-    //TODO: Incluir 2 novos atributos: numeroDeMissoesConcluidas, Rank
-    //TODO: Ranks : Genin, Chunin, Jounin, Hokage
-
-    String nome;
-    String aldeia;
-    int idade;
-    int numeroDeMissoesConcluidas;
-    NivelNinja rank;
-
-
-
-    public Ninja(String nome, String aldeia, int idade) {
-        this.nome = nome;
-        this.aldeia = aldeia;
-        this.idade = idade;
-    }
-
-    //TODO: Sobrecarga do contrutor chamado os novos atributos
-
-
-    public Ninja(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, NivelNinja rank) {
-        // Sobrecarga de metodos voce nao precisa redeclarar o contrutor so os  novos atributos
-        this(nome, aldeia, idade);
-        this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
-        this.rank = rank;
-    }
+    //Tirar dados ou mostrar para o usuario eu uso o GET + nome da variavel
 
 
     public Ninja() {
-
     }
 
-
-    public void habilidadeEspecial() {
-
+    public Ninja(String nome, String aldeia, int idade, int numeroDeMissoesConcluidas, double altura) {
+        this.nome = nome;
+        this.aldeia = aldeia;
+        this.idade = idade;
+        this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
+        this.altura = altura;
     }
 
-    // TODO NINJA VAI FAZER OBRIGATORIAMENTE
-    public void tacarKunai() {
-        System.out.println("Eu sou metodo da classe mae");
+    public String getNome() {
+        return nome;
     }
 
-    // metodos abstratos sao obrigados em todas as classes
-
-
-    public  void estrategiaDeBatalhaNinja() {
-        System.out.println("Essa é minha estragia de batalha");
-    };
-
-    // Sobrecarga de metodo - inteligencia de combate
-
-    public  void inteligenciaDeBatalha() {
-        System.out.println("Meu nome é " + nome + " Essa é minha estragia de batalha");
+    public int getIdade() {
+        return idade;
     }
 
-    public void inteligenciaDeBatalha(int qi) {
-        if (qi > 150) {
-            System.out.println("Seu QI É: " + qi + " e voce é um genio");
-
-        } else if (qi > 130) {
-            System.out.println("Seu QI É: " + qi + " e voce é um Ninja promissor");
-        } else {
-            System.out.println("SEU QI É: " + qi + " e voce  precisa treinar mais suas estrategias");
-        }
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
-    //metodo sem override
-    public void metodoProvissorio() {
-        System.out.println("test na classe ninja");
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    @Override
-    public String toString() {
-        return "Meu nome é: " + nome + " Eu sou da: " + aldeia + " e tenho " + idade + " Anos";
+    public int getNumeroDeMissoesConcluidas() {
+        return numeroDeMissoesConcluidas;
     }
 
+    public void setNumeroDeMissoesConcluidas(int numeroDeMissoesConcluidas) {
+        this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
+    }
+
+    public String getAldeia() {
+        return aldeia;
+    }
+
+    public void setAldeia(String aldeia) {
+        this.aldeia = aldeia;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
 }
