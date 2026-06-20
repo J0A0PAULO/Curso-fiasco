@@ -40,6 +40,11 @@ public abstract class Ninja implements EstrategiaDeBatalha  {
 
     }
 
+    // TODO NINJA VAI FAZER OBRIGATORIAMENTE
+    public void tacarKunai() {
+        System.out.println("Eu sou metodo da classe mae");
+    }
+
     // metodos abstratos sao obrigados em todas as classes
 
 

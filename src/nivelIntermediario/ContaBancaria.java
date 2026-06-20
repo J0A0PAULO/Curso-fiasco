@@ -13,7 +13,4 @@ public abstract class ContaBancaria implements Conta{
         this(saldo);
         this.conta = conta;
     }
-
-
-
 }

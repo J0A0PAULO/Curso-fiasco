@@ -27,4 +27,9 @@ public class Uzumaki extends Ninja{
     public void estrategiaDeBatalha() {
         System.out.println("Essa é minha estragia de batalha");
     }
+
+    @Override
+    public void tacarKunai() {
+        System.out.println("Eu sou metodo da classe Filha");
+    }
 }
